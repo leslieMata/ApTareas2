@@ -93,7 +93,10 @@ export const App = () => {
         }
      }
 
-    let porcentaje = terminadas / state.length;
+     let porcentaje = 0;
+     if (state.length>0) {
+        porcentaje = terminadas / state.length;
+     }
     // const tareas =["estudiar React", "hacer tareas", "comer", "hacer ejercicio", "tomar agua"]
     return (
         <>
